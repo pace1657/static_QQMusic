@@ -3,6 +3,11 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd {
   padding: 0;
 }
 
+body {
+  font-size: 14px;
+  font-family: poppin,Tahoma,Arial,\5FAE\8F6F\96C5\9ED1,sans-serif;
+}
+
 ul, ol, li {
   list-style: none;
 }
