@@ -48,6 +48,17 @@
   background-color: #31c27c;
 }
 
+.header .top-bar .menu-list .item.top-mark {
+  position: relative;
+}
+
+.header .top-bar .menu-list .item.top-mark img {
+  position: absolute;
+  width: 38px;
+  top: 18px;
+  left: 57px;
+}
+
 .header .top-bar .search {
   position: relative;
   width: 220px;
