@@ -6,7 +6,7 @@
 }
 
 .header .top-bar .left-area, 
-.header .top-bar .rigth-area {
+.header .top-bar .right-area {
   display: flex;
   align-items: center;
 }
@@ -46,4 +46,50 @@
 .header .top-bar .menu-list .item a.active {
   color: #fff;
   background-color: #31c27c;
+}
+
+.header .top-bar .search {
+  position: relative;
+  width: 220px;
+  height: 38px;
+  padding: 0 33px 0 11px;
+  border: 1px solid #c9c9c9;
+  border-radius: 3px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.header .top-bar .search .search-input {
+  width: 174px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 14px;
+  color: #757575;
+  border: none;
+}
+
+.header .top-bar .search .search-input::placeholder {
+  color: #757575;
+}
+
+.header .top-bar .search .search-button {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  top: 0;
+  right: 0;
+}
+
+.header .top-bar .search .search-icon {
+  width: 16px;
+  height: 16px;
+  background: url("../assets/images/icon_sprite.png") no-repeat;
+  background-position: 0 -40px;
+}
+
+.header .top-bar .search .search-button:hover .search-icon {
+  background-position: 0 -60px;
 }
