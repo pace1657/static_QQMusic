@@ -55,7 +55,6 @@
   padding: 0 33px 0 11px;
   border: 1px solid #c9c9c9;
   border-radius: 3px;
-  overflow: hidden;
   box-sizing: border-box;
 }
 
@@ -81,6 +80,7 @@
   height: 36px;
   top: 0;
   right: 0;
+  border-radius: 3px;
 }
 
 .header .top-bar .search .search-icon {
@@ -92,4 +92,94 @@
 
 .header .top-bar .search .search-button:hover .search-icon {
   background-position: 0 -60px;
+}
+
+.header .top-bar .search .search-history {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  top: 36px;
+  left: -1px;
+  border: 1px solid #c9c9c9;
+  border-radius: 3px;
+  transition: all .3s ease-in-out;
+}
+
+.header .top-bar .search .search-history .item {
+  width: 100%;
+}
+
+.header .top-bar .search .search-history a {
+  display: flex;
+  justify-content: space-between;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 11px 0 5px;
+  background-color: #fff;
+}
+
+.header .top-bar .search .search-history a:hover, 
+.header .top-bar .search .search-history a:hover .index, 
+.header .top-bar .search .search-history a:hover .hot {
+  color: #fff;
+  background-color: #31c27c;
+}
+
+.header .top-bar .search-history .info {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.header .top-bar .search-history .index {
+  display: inline-block;
+  width: 18px;
+  text-align: center;
+  color: #ff4222;
+}
+
+.header .top-bar .search-history .hot {
+  white-space: nowrap;
+  color: #999;
+}
+
+.header .top-bar .search .search-history .operate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 36px;
+  padding: 5px 0;
+}
+
+.header .top-bar .search .search-history .operate .desc {
+  padding-left: 11px;
+  color: #999;
+}
+
+.header .top-bar .search .search-history .operate a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  background-color: #fff;
+}
+
+.header .top-bar .search .search-history .operate i {
+  width: 16px;
+  height: 16px;
+  background: url("../assets/images/icon_sprite.png") no-repeat;
+  background-position: -100px 0;
+}
+
+.header .top-bar .search .search-history .operate a:hover i {
+  background-position: -20px -60px;
+}
+
+.header .top-bar .search:hover .search-history, 
+.header .top-bar .search .search-history:hover {
+  visibility: visible;
+  opacity: 1;
 }
