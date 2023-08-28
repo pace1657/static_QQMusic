@@ -116,10 +116,12 @@
   font-size: 12px;
   border-radius: 25px;
   color: #fff;
-  background-color: #24ccaa;
+  /* background-color: #2ac793; */
+  background-image: linear-gradient(90deg,#24ccaa,#31c27c);
 }
 
 .header .top-bar .menu-list .item.top-mark .app-desc .download:hover {
+  background-image: none;
   background-color: #31c27c;
 }
 
