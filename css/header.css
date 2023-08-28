@@ -196,6 +196,16 @@
   opacity: 1;
 }
 
+.header .top-bar .login-link {
+  line-height: 90px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.header .top-bar .login-link:hover {
+  color: #31c27c;
+}
+
 .header .top-bar .active-vip {
   margin-right: 10px;
   border-color: #31c27c;
