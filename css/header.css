@@ -195,3 +195,22 @@
   visibility: visible;
   opacity: 1;
 }
+
+.header .top-bar .active-vip {
+  margin-right: 10px;
+  border-color: #31c27c;
+  background-color: #31c27c;
+}
+
+.header .top-bar .active-vip .visible-area {
+  color: #fff;
+}
+
+.header .top-bar .top-up .visible-area:hover {
+  color: #fff;
+  background-color: #31c27c;
+}
+
+.header .top-bar .top-up:has(.visible-area:hover) {
+  border-color: #31c27c;
+}
