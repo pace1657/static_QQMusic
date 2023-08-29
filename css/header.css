@@ -1,3 +1,8 @@
+.header {
+  background-color: #fff;
+}
+
+/* top-bar */
 .header .top-bar {
   display: flex;
   justify-content: space-between;
@@ -325,3 +330,26 @@
   visibility: visible;
   opacity: 1;
 }
+
+/* nav-bar */
+.header .nav-bar .nav-list {
+  display: flex;
+  padding-left: 230px;
+}
+
+.header .nav-bar .nav-list .item {
+  margin-right: 47px;
+}
+
+.header .nav-bar .nav-list a {
+  display: block;
+  height: 51px;
+  line-height: 51px;
+  font-size: 15px;
+}
+
+.header .nav-bar .nav-list a:hover {
+  color: #31c27c;
+}
+
+
