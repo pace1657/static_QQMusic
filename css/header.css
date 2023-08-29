@@ -88,7 +88,7 @@
   width: 14px;
   height: 14px;
   margin: 0 8px 0 16px;
-  background: url("../assets/images/app_sprite.png");
+  background: url("../assets/images/app_sprite.png") no-repeat;
 }
 
 .header .top-bar .menu-list .item.top-mark .hq-icon {
@@ -121,7 +121,6 @@
   font-size: 12px;
   border-radius: 25px;
   color: #fff;
-  /* background-color: #2ac793; */
   background-image: linear-gradient(90deg,#24ccaa,#31c27c);
 }
 

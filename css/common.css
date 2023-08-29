@@ -48,9 +48,11 @@
 .common_select_button .hidden-area {
   visibility: hidden;
   opacity: 0;
+  position: relative;
   margin: 0 -1px;
   border-top: 1px solid #c9c9c9;
   transition: all .3s ease;
+  z-index: 9;
 }
 
 .common_select_button:hover .hidden-area {
@@ -63,6 +65,7 @@
   padding: 0 15px;
   border: 1px solid #c9c9c9;
   border-top: none;
+  background-color: #fff;
 }
 
 .common_select_button .hidden-area a:nth-last-child(1) {
@@ -74,3 +77,63 @@
   background-color: #31c27c;
   border-color: #31c27c;
 }
+
+/* 通用区域面板 */
+.common_panel {
+  position: relative;
+  background-image: linear-gradient(180deg, #f2f2f2, #fafafa);
+  overflow: hidden;
+}
+
+.common_panel .prev-button,
+.common_panel .next-button {
+  display: inline-flex;
+  position: absolute;
+  width: 79px;
+  height: 108px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  justify-content: center;
+  align-items: center;
+  background-color: #ededed;
+  transition: all .3s ease-out;
+}
+
+.common_panel .prev-button:hover,
+.common_panel .next-button:hover {
+  background-color: #e0e0e0;
+}
+
+.common_panel .prev-button {
+  left: -79px;
+}
+
+.common_panel:hover .prev-button {
+  left: 0;
+}
+
+.common_panel .next-button {
+  right: -79px;
+}
+
+.common_panel:hover .next-button {
+  right: 0;
+}
+
+.common_panel .prev-button .icon,
+.common_panel .next-button .icon {
+  width: 20px;
+  height: 39px;
+  background: url("../assets/images/icon_sprite.png") no-repeat;
+}
+
+.common_panel .prev-button .icon {
+  background-position: -20px -120px;
+}
+
+.common_panel .next-button .icon {
+  background-position: 0 -120px;
+}
+
+
