@@ -136,4 +136,84 @@
   background-position: 0 -120px;
 }
 
+/* 通用标题 */
+.common_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.common_title .left-area,
+.common_title .right-area {
+  display: flex;
+  flex: 1;
+}
+
+.common_title .right-area {
+  justify-content: flex-end;
+}
+
+.common_title .center-area{
+  width: 196px;
+  height: 40px;
+  text-indent: -9999px;
+  background: url("../assets/images/title-sprite.png") no-repeat;
+}
+
+/* 通用右侧更多链接 */
+.common_more {
+  display: flex;
+  align-items: center;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.common_more .right-arrow {
+  width: 7px;
+  height: 12px;
+  margin-left: 6px;
+  background: url("../assets/images/icon_sprite.png") no-repeat -120px -40px;
+}
+
+.common_more:hover,
+.common_more:hover .right-arrow {
+  color: #31c27c;
+  background-position: -120px -60px;
+}
+
+/* 通用导航 */
+.common_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+.common_nav .left-area,
+.common_nav .right-area {
+  display: flex;
+  flex: 1;
+}
+
+.common_nav .right-area {
+  justify-content: flex-end;
+}
+
+.common_nav .center-area {
+  display: flex;
+}
+
+.common_nav .center-area .item {
+  margin: 0 24px;
+}
+
+.common_nav .center-area .item a {
+  display: block;
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+.common_nav .center-area .item a.active,
+.common_nav .center-area .item a:hover {
+  color: #31c27c;
+}

@@ -1,3 +1,59 @@
 .content .common_panel {
   height: 532px;
 }
+
+.content .title-area {
+  margin: 50px 0 8px;
+}
+
+/* 歌单推荐 */
+.content .song-list-recommend .title-area .center-area {
+  background-position: 0 0;
+}
+
+/* 新歌首发 */
+.content .new-song-publish .title-area .center-area {
+  background-position: 0 -50px;
+}
+
+.content .new-song-publish .nav-area .left-area .play-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 123px;
+  height: 38px;
+  border: 1px solid #c9c9c9;
+  border-radius: 2px;
+  color: #000;
+  box-sizing: border-box;
+}
+.content .new-song-publish .nav-area .left-area .play-all:hover {
+  background-color: #ededed;
+}
+
+.content .new-song-publish .nav-area .left-area .play-all .icon {
+  width: 13px;
+  height: 16px;
+  margin-right: 6px;
+  background: url("../assets/images/icon_sprite.png") no-repeat -60px -220px;
+}
+
+/* 精彩推荐 */
+.content .wonderful-recommend .title-area .center-area {
+  background-position: 0 -100px;
+}
+
+/* 新碟首发 */
+.content .new-disk-publish .title-area .center-area {
+  background-position: 0 -150px;
+}
+
+/* 排行榜 */
+.content .ranking-panel .title-area .center-area {
+  background-position: 0 -200px;
+}
+
+/* MV */
+.content .MV-panel .title-area .center-area {
+  background-position: 0 -250px;
+}
