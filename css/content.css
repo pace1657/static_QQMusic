@@ -1,7 +1,3 @@
-.content .common_panel {
-  height: 532px;
-}
-
 .content .title-area {
   margin: 50px 0 8px;
 }
@@ -9,6 +5,59 @@
 /* 歌单推荐 */
 .content .song-list-recommend .title-area .center-area {
   background-position: 0 0;
+}
+
+.content .song-list-recommend .container-area {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 15px 0 35px;
+  overflow: hidden;
+}
+
+.content .song-list-recommend .container-area .container-list {
+  display: flex;
+}
+
+.content .song-list-recommend .container-item {
+  width: 224px;
+  margin-right: 20px;
+}
+
+.content .song-list-recommend .container-item .album {
+  width: 224px;
+  height: 224px;
+  margin-bottom: 15px;
+}
+
+.content .song-list-recommend .container-item .album .play-icon {
+  width: 49px;
+  height: 49px;
+  background-size: 49px 49px;
+}
+
+.content .song-list-recommend .container-item .info .title,
+.content .song-list-recommend .container-item .info .desc {
+  display: block;
+  line-height: 22px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.content .song-list-recommend .container-item .info .title {
+  color: #000;
+}
+
+.content .song-list-recommend .container-item .info .title:hover {
+  color: #31c27c;
+}
+
+.content .song-list-recommend .container-item .info .desc {
+  color: #999;
+}
+
+.content .song-list-recommend .index-area {
+  margin-bottom: 15px;
 }
 
 /* 新歌首发 */
