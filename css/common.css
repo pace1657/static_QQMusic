@@ -217,3 +217,28 @@
 .common_nav .center-area .item a:hover {
   color: #31c27c;
 }
+
+/* 通用轮播图下标 */
+.common_index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 38px;
+}
+
+.common_index .dot {
+  margin: 0 11px;
+}
+
+.common_index .dot a {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.common_index .dot a.active,
+.common_index .dot a:hover {
+  background-color: rgba(0, 0, 0, .3);
+}
