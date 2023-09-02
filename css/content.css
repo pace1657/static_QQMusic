@@ -2,6 +2,10 @@
   margin: 50px 0 8px;
 }
 
+.content .index-area {
+  margin-bottom: 15px;
+}
+
 /* 歌单推荐 */
 .content .song-list-recommend .title-area .center-area {
   background-position: 0 0;
@@ -9,7 +13,6 @@
 
 .content .song-list-recommend .container-area {
   display: flex;
-  flex-wrap: nowrap;
   margin: 15px 0 35px;
   overflow: hidden;
 }
@@ -56,10 +59,6 @@
   color: #999;
 }
 
-.content .song-list-recommend .index-area {
-  margin-bottom: 15px;
-}
-
 /* 新歌首发 */
 .content .new-song-publish .title-area .center-area {
   background-position: 0 -50px;
@@ -85,6 +84,73 @@
   height: 16px;
   margin-right: 6px;
   background: url("../assets/images/icon_sprite.png") no-repeat -60px -220px;
+}
+
+.content .new-song-publish .container-area {
+  display: flex;
+  margin: 20px -30px 0 0;
+  overflow: hidden;
+}
+
+.content .new-song-publish .container-area .container-list {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+.content .new-song-publish .container-area .container-item {
+  width: 410px;
+  height: 111px;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+
+.content .new-song-publish .container-area .container-item .parcel {
+  display: flex;
+  height: 110px;
+  align-items: center;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+}
+
+.content .new-song-publish .container-area .container-item:nth-last-child(-n + 3) .parcel {
+  border-bottom: none;
+}
+
+.content .new-song-publish .container-area .container-item .album {
+  width: 86px;
+  height: 86px;
+  flex-shrink: 0;
+}
+
+.content .new-song-publish .container-area .container-item .album .play-icon {
+  width: 32px;
+  height: 32px;
+  background-size: 32px 32px;
+}
+
+.content .new-song-publish .container-area .container-item .song-info {
+  flex: 1;
+  padding: 0 60px 0 12px;
+  overflow: hidden;
+}
+
+.content .new-song-publish .container-area .container-item .song-info a {
+  display: block;
+  line-height: 1.7;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.content .new-song-publish .container-area .container-item .song-info a:hover {
+  color: #31c27c;
+}
+
+.content .new-song-publish .container-area .container-item .song-info .author,
+.content .new-song-publish .container-area .container-item .duration {
+  color: #999;
 }
 
 /* 精彩推荐 */
