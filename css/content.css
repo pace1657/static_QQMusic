@@ -158,6 +158,32 @@
   background-position: 0 -100px;
 }
 
+.content .wonderful-recommend .container-area {
+  display: flex;
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.content .wonderful-recommend .container-area .container-list {
+  display: flex;
+}
+
+.content .wonderful-recommend .container-area .container-item {
+  margin-right: 20px;
+}
+
+.content .wonderful-recommend .container-area .container-item .album {
+  display: block;
+  width: 590px;
+  height: 236px;
+}
+
+.content .wonderful-recommend .container-area .container-item .album img {
+  width: 100%;
+  height: 100%;
+}
+
+
 /* 新碟首发 */
 .content .new-disk-publish .title-area .center-area {
   background-position: 0 -150px;
