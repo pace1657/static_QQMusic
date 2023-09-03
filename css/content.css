@@ -246,6 +246,144 @@
   background-position: 0 -200px;
 }
 
+.content .ranking-panel .container-area {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 70px;
+}
+
+.content .ranking-panel .container-area .container-item {
+  position: relative;
+  width: 224px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.content .ranking-panel .container-area .container-item .bg-album {
+  width: 100%;
+  height: 100%;
+  background: url("../assets/images/album-sprite.webp") no-repeat;
+  transition: all .5s ease-out;
+}
+
+.content .ranking-panel .container-area .container-item:hover .bg-album {
+  transform: scale(1.1);
+  transform-origin: center center;
+}
+
+.content .ranking-panel .container-area .hot .bg-album {
+  background-position: 0 0;
+}
+
+.content .ranking-panel .container-area .new .bg-album {
+  background-position: -224px 0;
+}
+
+.content .ranking-panel .container-area .fashion .bg-album {
+  background-position: -448px 0;
+}
+
+.content .ranking-panel .container-area .english .bg-album {
+  background-position: -672px 0;
+}
+
+.content .ranking-panel .container-area .korea .bg-album {
+  background-position: -896px 0;
+}
+
+.content .ranking-panel .container-item .title {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.content .ranking-panel .container-item .title::before {
+  content: "";
+  display: block;
+  width: 66px;
+  height: 22px;
+  margin: 0 auto 5px;
+  background: url("../assets/images/title-sprite.png") no-repeat 0 -300px;
+}
+
+.content .ranking-panel .container-item .title a {
+  color: #fff;
+}
+
+.content .ranking-panel .container-item .line {
+  display: block;
+  position: absolute;
+  width: 36px;
+  height: 2px;
+  top: 150px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.content .ranking-panel .container-item .play-icon {
+  display: block;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 134px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: all .3s ease-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.content .ranking-panel .container-item:hover .line {
+  display: none;
+}
+
+.content .ranking-panel .container-item:hover .play-icon {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1.6);
+}
+
+.content .ranking-panel .container-item .top-song {
+  position: absolute;
+  top: 185px;
+  left: 0;
+  right: 0;
+  margin: 0;
+  color: #fff;
+}
+
+.content .ranking-panel .container-item .top-song-item {
+  display: flex;
+  margin-bottom: 25px;
+  padding: 0 30px;
+  line-height: 1.8;
+}
+
+.content .ranking-panel .container-item .top-song-item .index {
+  width: 15px;
+}
+
+.content .ranking-panel .container-item .top-song-item .song-info {
+  flex: 1;
+  overflow: hidden;
+}
+
+.content .ranking-panel .container-item .top-song-item .song-info a {
+  display: block;
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 /* MV */
 .content .MV-panel .title-area .center-area {
   background-position: 0 -250px;
