@@ -388,3 +388,66 @@
 .content .MV-panel .title-area .center-area {
   background-position: 0 -250px;
 }
+
+.content .MV-panel .container-area {
+  display: flex;
+  margin: 15px -20px 0 0;
+  overflow: hidden;
+}
+
+.content .MV-panel .container-area .container-list {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+.content .MV-panel .container-item {
+  width: 224px;
+  margin: 0 20px 25px 0;
+}
+
+.content .MV-panel .container-item .album {
+  width: 224px;
+  height: 127px;
+  margin-bottom: 15px;
+}
+
+.content .MV-panel .container-item .album .play-icon {
+  width: 49px;
+  height: 49px;
+  background-size: 49px 49px;
+}
+
+.content .MV-panel .container-item .info p {
+  line-height: 22px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.content .MV-panel .container-item .info .title {
+  color: #000;
+}
+
+.content .MV-panel .container-item .info .title:hover,
+.content .MV-panel .container-item .info .desc:hover {
+  color: #31c27c;
+}
+
+.content .MV-panel .container-item .info .desc,
+.content .MV-panel .container-item .info .play-count {
+  color: #999;
+}
+
+.content .MV-panel .container-item .info .play-count {
+  display: flex;
+  align-items: center;
+}
+
+.content .MV-panel .container-item .info .play-count .icon {
+  width: 19px;
+  height: 12px;
+  margin-right: 5px;
+  background: url("../assets/images/icon_sprite.png") no-repeat -180px -20px;
+}
