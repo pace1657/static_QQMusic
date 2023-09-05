@@ -1,0 +1,94 @@
+.footer {
+  background-color: #333;
+}
+
+/* 分类区域 */
+.footer .category-area {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer .category-area .category-item {
+  width: 357px;
+}
+
+.footer .category-area .category-item .title {
+  margin: 80px 0 30px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #999;
+}
+
+/* 下载QQ音乐客户端 */
+.footer .category-area .download-app .download-list{
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+}
+
+.footer .category-area .download-app .download-item {
+  width: 89px;
+}
+
+.footer .category-area .download-app .download-item a {
+  display: block;
+  color: #999;
+  text-align: center;
+}
+
+.footer .category-area .download-app .download-item .icon {
+  display: block;
+  margin: 0 auto 12px;
+  background: url("../assets/images/footer-sprite.png") no-repeat;
+}
+
+.footer .category-area .download-app .download-item.PC .icon {
+  width: 37px;
+  height: 48px;
+  background-position: -2px 0;
+}
+
+.footer .category-area .download-app .download-item.PC:hover a,
+.footer .category-area .download-app .download-item.PC:hover .icon {
+  color: #31c27c;
+  background-position: -2px -49px;
+}
+
+.footer .category-area .download-app .download-item.Mac .icon {
+  width: 46px;
+  height: 48px;
+  background-position: -92px 0;
+}
+
+.footer .category-area .download-app .download-item.Mac:hover a,
+.footer .category-area .download-app .download-item.Mac:hover .icon {
+  color: #31c27c;
+  background-position: -92px -49px;
+}
+
+.footer .category-area .download-app .download-item.Android .icon {
+  width: 37px;
+  height: 48px;
+  background-position: -190px 0;
+}
+
+.footer .category-area .download-app .download-item.Android:hover a,
+.footer .category-area .download-app .download-item.Android:hover .icon {
+  color: #31c27c;
+  background-position: -190px -49px;
+}
+
+.footer .category-area .download-app .download-item.iPhone .icon {
+  width: 34px;
+  height: 48px;
+  background-position: -279px 0;
+}
+
+.footer .category-area .download-app .download-item.iPhone:hover a,
+.footer .category-area .download-app .download-item.iPhone:hover .icon {
+  color: #31c27c;
+  background-position: -279px -49px;
+}
+
+/* 网站说明 */
