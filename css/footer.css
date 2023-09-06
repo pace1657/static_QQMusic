@@ -7,6 +7,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-left: 15px;
 }
 
 .footer .category-area .category-item {
@@ -23,12 +24,12 @@
 /* 下载QQ音乐客户端 */
 .footer .category-area .download-app .download-list{
   display: flex;
-  /* justify-content: space-between; */
   flex-wrap: wrap;
+  margin-left: -26px;
 }
 
 .footer .category-area .download-app .download-item {
-  width: 89px;
+  width: 93px;
 }
 
 .footer .category-area .download-app .download-item a {
@@ -90,5 +91,101 @@
   color: #31c27c;
   background-position: -279px -49px;
 }
+
+/* 特色产品 */
+.footer .category-area .feature-product .product-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -18px;
+}
+
+.footer .category-area .feature-product .product-item {
+  width: 90px;
+  margin-bottom: 20px;
+}
+
+.footer .category-area .feature-product .product-item a {
+  display: block;
+  color: #999;
+  text-align: center;
+}
+
+.footer .category-area .feature-product .product-item .icon {
+  display: block;
+  margin: 0 auto 12px;
+  background: url("../assets/images/footer-sprite.png") no-repeat;
+}
+
+.footer .category-area .feature-product .product-item.K-song .icon {
+  width: 41px;
+  height: 48px;
+  background-position: -370px 0;
+}
+
+.footer .category-area .feature-product .product-item.K-song:hover a,
+.footer .category-area .feature-product .product-item.K-song:hover .icon {
+  color: #31c27c;
+  background-position: -370px -49px;
+}
+
+.footer .category-area .feature-product .product-item.galaxy-sound .icon {
+  width: 37px;
+  height: 48px;
+  background-position: -463px 0;
+}
+
+.footer .category-area .feature-product .product-item.galaxy-sound:hover a,
+.footer .category-area .feature-product .product-item.galaxy-sound:hover .icon {
+  color: #31c27c;
+  background-position: -463px -48px;
+}
+
+.footer .category-area .feature-product .product-item.QPlay .icon {
+  width: 40px;
+  height: 48px;
+  background-position: -563px 0;
+}
+
+.footer .category-area .feature-product .product-item.QPlay:hover a,
+.footer .category-area .feature-product .product-item.QPlay:hover .icon {
+  color: #31c27c;
+  background-position: -563px -49px;
+}
+
+.footer .category-area .feature-product .product-item.Fan-live .icon {
+  width: 40px;
+  height: 48px;
+  background-position: -650px 0;
+}
+
+.footer .category-area .feature-product .product-item.Fan-live:hover a,
+.footer .category-area .feature-product .product-item.Fan-live:hover .icon {
+  color: #31c27c;
+  background-position: -650px -51px;
+}
+
+/* 合作链接 */
+.footer .category-area .cooperation-link {
+  flex-basis: 300px;
+}
+
+.footer .category-area .cooperation-link .link-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer .category-area .cooperation-link .link-list li {
+  width: 100px;
+  margin-bottom: 12px;
+}
+
+.footer .category-area .cooperation-link .link-list li a {
+  color: #999;
+}
+
+.footer .category-area .cooperation-link .link-list li a:hover {
+  color: #31c27c;
+}
+ 
 
 /* 网站说明 */
