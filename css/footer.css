@@ -100,7 +100,7 @@
 }
 
 .footer .category-area .feature-product .product-item {
-  width: 90px;
+  width: 93px;
   margin-bottom: 20px;
 }
 
@@ -177,6 +177,10 @@
 .footer .category-area .cooperation-link .link-list li {
   width: 100px;
   margin-bottom: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #999;
 }
 
 .footer .category-area .cooperation-link .link-list li a {
@@ -186,6 +190,29 @@
 .footer .category-area .cooperation-link .link-list li a:hover {
   color: #31c27c;
 }
+
+/* 开放平台 */
+.footer .category-area .open-platform {
+  flex-basis: 400px;
+}
+
+.footer .category-area .open-platform .platform-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer .category-area .open-platform .platform-list li {
+  margin: 0 30px 15px 0;
+}
+
+.footer .category-area .open-platform .platform-list a {
+  color: #999;
+}
+
+.footer .category-area .open-platform .platform-list a:hover {
+  color: #31c27c;
+}
+
  
 
 /* 网站说明 */
