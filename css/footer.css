@@ -213,6 +213,26 @@
   color: #31c27c;
 }
 
- 
+/* TME集团官网 */
+.footer .category-area .TME-website {
+  flex-basis: 310px;
+}
+
+.footer .category-area .TME-website .list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer .category-area .TME-website .list li {
+  margin: 0 30px 15px 0;
+}
+
+.footer .category-area .TME-website .list li a {
+  color: #999;
+}
+
+.footer .category-area .TME-website .list li a:hover {
+  color: #31c27c;
+}
 
 /* 网站说明 */
