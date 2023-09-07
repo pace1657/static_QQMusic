@@ -451,3 +451,60 @@
   margin-right: 5px;
   background: url("../assets/images/icon_sprite.png") no-repeat -180px -20px;
 }
+
+/* 侧边固定导航 */
+.aside-nav {
+  display: flex;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  flex-direction: column;
+}
+
+.aside-nav .aside-nav-item {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 2px;
+}
+
+.aside-nav .aside-nav-item a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #c9c9c9;
+  box-sizing: border-box;
+}
+
+.aside-nav .aside-nav-item a:hover {
+  color: #31c27c;
+  background-color: #ededed;
+}
+
+.aside-nav .aside-nav-item.to-top a,
+.aside-nav .aside-nav-item.player a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aside-nav .aside-nav-item.to-top a::before,
+.aside-nav .aside-nav-item.player a::before {
+  content: "";
+  display: block;
+  background: url("../assets/images/icon_sprite.png") no-repeat;
+}
+
+.aside-nav .aside-nav-item.to-top a::before {
+  width: 18px;
+  height: 10px;
+  background-position: -160px 0;
+}
+
+.aside-nav .aside-nav-item.player a::before {
+  width: 20px;
+  height: 17px;
+  background-position: -180px 0;
+}
