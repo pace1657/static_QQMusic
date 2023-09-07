@@ -7,6 +7,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 45px;
   padding-left: 15px;
 }
 
@@ -236,3 +237,41 @@
 }
 
 /* 网站说明 */
+.footer .website-desc {
+  padding: 24px 0;
+}
+
+.footer .website-desc .other-link,
+.footer .website-desc .website-info,
+.footer .website-desc .legal-relevance {
+  display: flex;
+  justify-content: center;
+  line-height: 28px;
+  font-size: 12px;
+  color: #999;
+}
+
+.footer .website-desc .other-link a,
+.footer .website-desc .website-info a,
+.footer .website-desc .legal-relevance a {
+  color: #999;
+}
+
+.footer .website-desc .other-link a:hover,
+.footer .website-desc .website-info a:hover,
+.footer .website-desc .legal-relevance a:hover {
+  color: #31c27c;
+}
+
+.footer .website-desc .other-link .separator,
+.footer .website-desc .legal-relevance .separator {
+  margin: 0 3px;
+}
+
+.footer .website-desc .website-info span {
+  margin-right: 5px;
+}
+
+.footer .website-desc .legal-relevance .text {
+  margin-right: 5px;
+}
